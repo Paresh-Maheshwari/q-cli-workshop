@@ -1,0 +1,51 @@
+<svg width="500" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="500" height="200" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2" rx="10"/>
+  
+  <!-- Title -->
+  <text x="250" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">Natural Language → Tool Execution</text>
+  
+  <!-- Step 1: User Input -->
+  <rect x="20" y="50" width="100" height="60" fill="#E3F2FD" stroke="#2196F3" stroke-width="2" rx="8"/>
+  <text x="70" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1976D2">1. User Request</text>
+  <text x="70" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#1976D2">"Read app.py"</text>
+  <text x="70" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#1976D2">"List S3 buckets"</text>
+  
+  <!-- Step 2: AI Analysis -->
+  <rect x="150" y="50" width="100" height="60" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2" rx="8"/>
+  <text x="200" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#7B1FA2">2. AI Analysis</text>
+  <text x="200" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7B1FA2">Intent Detection</text>
+  <text x="200" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7B1FA2">Tool Selection</text>
+  
+  <!-- Step 3: Permission Check -->
+  <rect x="280" y="50" width="100" height="60" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" rx="8"/>
+  <text x="330" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#F57C00">3. Permission</text>
+  <text x="330" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#F57C00">Trust Level Check</text>
+  <text x="330" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#F57C00">User Approval</text>
+  
+  <!-- Step 4: Execution -->
+  <rect x="410" y="50" width="70" height="60" fill="#E8F5E8" stroke="#4CAF50" stroke-width="2" rx="8"/>
+  <text x="445" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#388E3C">4. Execute</text>
+  <text x="445" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#388E3C">Tool Run</text>
+  <text x="445" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#388E3C">Result</text>
+  
+  <!-- Arrows -->
+  <path d="M 125 80 L 145 80" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 255 80 L 275 80" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 385 80 L 405 80" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <!-- Examples -->
+  <g transform="translate(50, 140)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Examples:</text>
+    <text x="0" y="18" font-family="Arial, sans-serif" font-size="10" fill="#666">"Show me the package.json file" → fs_read tool</text>
+    <text x="0" y="32" font-family="Arial, sans-serif" font-size="10" fill="#666">"Run npm install" → execute_bash tool</text>
+    <text x="0" y="46" font-family="Arial, sans-serif" font-size="10" fill="#666">"Create a Python script" → fs_write tool</text>
+  </g>
+</svg>

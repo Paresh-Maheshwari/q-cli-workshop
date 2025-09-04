@@ -1,0 +1,72 @@
+<svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#45a049;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="300" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2" rx="10"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333">Amazon Q CLI Built-in Tools</text>
+  
+  <!-- User -->
+  <circle cx="80" cy="120" r="25" fill="#2196F3"/>
+  <text x="80" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">User</text>
+  
+  <!-- Natural Language Request -->
+  <rect x="140" y="100" width="120" height="40" fill="#FFF3CD" stroke="#FFC107" stroke-width="2" rx="5"/>
+  <text x="200" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#856404">"Read app.py"</text>
+  <text x="200" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#856404">"List S3 buckets"</text>
+  
+  <!-- Q CLI Engine -->
+  <rect x="300" y="80" width="100" height="80" fill="url(#grad1)" stroke="#4CAF50" stroke-width="2" rx="10"/>
+  <text x="350" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Q CLI</text>
+  <text x="350" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Engine</text>
+  <text x="350" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Tool Selection</text>
+  <text x="350" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Permission Check</text>
+  
+  <!-- Tools -->
+  <g transform="translate(450, 60)">
+    <!-- fs_read -->
+    <rect x="0" y="0" width="60" height="25" fill="#28a745" stroke="#1e7e34" rx="3"/>
+    <text x="30" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">fs_read</text>
+    
+    <!-- execute_bash -->
+    <rect x="0" y="30" width="60" height="25" fill="#ffc107" stroke="#e0a800" rx="3"/>
+    <text x="30" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#212529">execute_bash</text>
+    
+    <!-- use_aws -->
+    <rect x="0" y="60" width="60" height="25" fill="#ffc107" stroke="#e0a800" rx="3"/>
+    <text x="30" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#212529">use_aws</text>
+    
+    <!-- fs_write -->
+    <rect x="0" y="90" width="60" height="25" fill="#dc3545" stroke="#c82333" rx="3"/>
+    <text x="30" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">fs_write</text>
+  </g>
+  
+  <!-- Arrows -->
+  <path d="M 105 120 L 135 120" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 265 120 L 295 120" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 405 120 L 445 120" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <g transform="translate(50, 220)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Trust Levels:</text>
+    <rect x="0" y="10" width="15" height="15" fill="#28a745"/>
+    <text x="20" y="22" font-family="Arial, sans-serif" font-size="10" fill="#333">Trusted</text>
+    <rect x="80" y="10" width="15" height="15" fill="#ffc107"/>
+    <text x="100" y="22" font-family="Arial, sans-serif" font-size="10" fill="#333">Read-only trusted</text>
+    <rect x="200" y="10" width="15" height="15" fill="#dc3545"/>
+    <text x="220" y="22" font-family="Arial, sans-serif" font-size="10" fill="#333">Not trusted</text>
+  </g>
+</svg>

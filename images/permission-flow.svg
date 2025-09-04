@@ -1,0 +1,50 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2" rx="10"/>
+  
+  <!-- Title -->
+  <text x="200" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">Tool Permission Flow</text>
+  
+  <!-- Start -->
+  <ellipse cx="200" cy="60" rx="60" ry="20" fill="#4CAF50" stroke="#45a049" stroke-width="2"/>
+  <text x="200" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">User Request</text>
+  
+  <!-- Decision Diamond -->
+  <polygon points="200,100 240,130 200,160 160,130" fill="#FFC107" stroke="#FFB300" stroke-width="2"/>
+  <text x="200" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#333">Tool</text>
+  <text x="200" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#333">Trusted?</text>
+  
+  <!-- Trusted Path -->
+  <rect x="80" y="190" width="80" height="40" fill="#28a745" stroke="#1e7e34" stroke-width="2" rx="5"/>
+  <text x="120" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">Execute</text>
+  <text x="120" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Immediately</text>
+  
+  <!-- Not Trusted Path -->
+  <rect x="240" y="190" width="80" height="40" fill="#dc3545" stroke="#c82333" stroke-width="2" rx="5"/>
+  <text x="280" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">Ask</text>
+  <text x="280" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Permission</text>
+  
+  <!-- Arrows -->
+  <path d="M 200 80 L 200 95" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 180 145 L 140 175" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 220 145 L 260 175" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Labels -->
+  <text x="150" y="165" font-family="Arial, sans-serif" font-size="9" fill="#28a745" font-weight="bold">Yes</text>
+  <text x="230" y="165" font-family="Arial, sans-serif" font-size="9" fill="#dc3545" font-weight="bold">No</text>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <!-- Trust Examples -->
+  <g transform="translate(20, 250)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">Trust Levels:</text>
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="9" fill="#28a745">🟢 Trusted: fs_read, introspect</text>
+    <text x="0" y="28" font-family="Arial, sans-serif" font-size="9" fill="#FFC107">🟡 Read-only: execute_bash, use_aws</text>
+    <text x="200" y="15" font-family="Arial, sans-serif" font-size="9" fill="#dc3545">🔴 Not trusted: fs_write, knowledge</text>
+  </g>
+</svg>

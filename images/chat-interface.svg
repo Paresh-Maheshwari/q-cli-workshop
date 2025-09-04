@@ -1,0 +1,102 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font: bold 16px sans-serif; fill: #232F3E; }
+      .header { font: bold 14px sans-serif; fill: #232F3E; }
+      .text { font: 12px sans-serif; fill: #232F3E; }
+      .command { font: 11px monospace; fill: #0073BB; }
+      .terminal { fill: #1E1E1E; stroke: #333; stroke-width: 2; rx: 8; }
+      .prompt { fill: #FF9900; }
+      .user { fill: #E7F3FF; stroke: #0073BB; stroke-width: 1; rx: 4; }
+      .ai { fill: #F0F8FF; stroke: #4A90E2; stroke-width: 1; rx: 4; }
+      .cmd { fill: #FFF3CD; stroke: #856404; stroke-width: 1; rx: 4; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" class="title">Amazon Q CLI Chat Interface</text>
+  
+  <!-- Terminal Window -->
+  <rect x="50" y="50" width="700" height="500" class="terminal"/>
+  
+  <!-- Terminal Header -->
+  <rect x="50" y="50" width="700" height="30" fill="#333"/>
+  <circle cx="70" cy="65" r="6" fill="#FF5F56"/>
+  <circle cx="90" cy="65" r="6" fill="#FFBD2E"/>
+  <circle cx="110" cy="65" r="6" fill="#27CA3F"/>
+  <text x="400" y="70" text-anchor="middle" class="text" fill="white">Amazon Q CLI - Chat Session</text>
+  
+  <!-- Chat Content -->
+  
+  <!-- Start Command -->
+  <text x="70" y="110" class="command" fill="#FF9900">$ q chat</text>
+  
+  <!-- Welcome Message -->
+  <rect x="70" y="120" width="660" height="40" class="ai"/>
+  <text x="80" y="135" class="text">🤖 Amazon Q CLI</text>
+  <text x="80" y="150" class="text">Hello! I'm Amazon Q, your AI assistant. How can I help you today?</text>
+  
+  <!-- User Message -->
+  <rect x="70" y="170" width="660" height="25" class="user"/>
+  <text x="80" y="185" class="text">👤 Help me create a Python web application</text>
+  
+  <!-- AI Response -->
+  <rect x="70" y="205" width="660" height="80" class="ai"/>
+  <text x="80" y="220" class="text">🤖 I'd be happy to help you create a Python web application! Let me guide you through the process.</text>
+  <text x="80" y="235" class="text">First, let's set up the project structure. I'll use my built-in tools to create the files:</text>
+  <text x="80" y="250" class="command">/fs_write app.py</text>
+  <text x="80" y="265" class="text">Would you like to use Flask or FastAPI for your web framework?</text>
+  
+  <!-- Context Command -->
+  <rect x="70" y="295" width="660" height="25" class="cmd"/>
+  <text x="80" y="310" class="command">/context add requirements.txt</text>
+  
+  <!-- Chat Commands Panel -->
+  <rect x="500" y="330" width="240" height="200" fill="#F8F9FA" stroke="#DEE2E6" stroke-width="1" rx="4"/>
+  <text x="620" y="350" text-anchor="middle" class="header">Available Commands</text>
+  
+  <text x="510" y="370" class="command">/quit</text>
+  <text x="580" y="370" class="text">- Exit chat</text>
+  
+  <text x="510" y="385" class="command">/help</text>
+  <text x="580" y="385" class="text">- Show help</text>
+  
+  <text x="510" y="400" class="command">/clear</text>
+  <text x="580" y="400" class="text">- Clear history</text>
+  
+  <text x="510" y="415" class="command">/context</text>
+  <text x="580" y="415" class="text">- Manage context</text>
+  
+  <text x="510" y="430" class="command">/tools</text>
+  <text x="580" y="430" class="text">- View tools</text>
+  
+  <text x="510" y="445" class="command">/experiment</text>
+  <text x="580" y="445" class="text">- Toggle features</text>
+  
+  <text x="510" y="460" class="command">/knowledge</text>
+  <text x="580" y="460" class="text">- Knowledge base</text>
+  
+  <text x="510" y="475" class="command">/todos</text>
+  <text x="580" y="475" class="text">- Manage todos</text>
+  
+  <text x="510" y="490" class="command">/tangent</text>
+  <text x="580" y="490" class="text">- Tangent mode</text>
+  
+  <text x="510" y="505" class="command">/mcp</text>
+  <text x="580" y="505" class="text">- MCP servers</text>
+  
+  <!-- Features Panel -->
+  <rect x="70" y="330" width="420" height="200" fill="#F8F9FA" stroke="#DEE2E6" stroke-width="1" rx="4"/>
+  <text x="280" y="350" text-anchor="middle" class="header">Key Features</text>
+  
+  <text x="80" y="370" class="text">✅ Natural language conversations</text>
+  <text x="80" y="385" class="text">✅ Built-in file operations (fs_read, fs_write)</text>
+  <text x="80" y="400" class="text">✅ Code execution (execute_bash)</text>
+  <text x="80" y="415" class="text">✅ Context management</text>
+  <text x="80" y="430" class="text">✅ Knowledge base integration</text>
+  <text x="80" y="445" class="text">✅ Todo list management</text>
+  <text x="80" y="460" class="text">✅ MCP server integration</text>
+  <text x="80" y="475" class="text">✅ Thinking mode for complex reasoning</text>
+  <text x="80" y="490" class="text">✅ Session persistence</text>
+  <text x="80" y="505" class="text">✅ AWS service integration</text>
+</svg>

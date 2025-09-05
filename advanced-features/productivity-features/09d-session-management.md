@@ -127,6 +127,6 @@ ls -la ~/.amazonq/
 
 ## Next Steps
 
-- **[Back to Productivity Features](./09-productivity-features.md)**
+- **[Back to Productivity Features](../09-productivity-features.md)**
 - **[Knowledge Base](./09c-knowledge-base.md)** - Information storage
 - **[Workflow Automation](./09e-workflow-automation.md)** - Advanced features

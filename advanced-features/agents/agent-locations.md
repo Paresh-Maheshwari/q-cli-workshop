@@ -97,6 +97,5 @@ EOF
 
 ## Next Steps
 
-- **[Back to Advanced Features](../09-productivity-features.md)**
+- **[Back to Productivity Features](../09-productivity-features.md)**
 - **[Agent Format](./agent-format.md)**
-- **[Default Agent Behavior](./default-behavior.md)**

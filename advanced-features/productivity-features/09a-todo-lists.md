@@ -93,6 +93,6 @@ q settings
 
 ## Next Steps
 
-- **[Back to Productivity Features](./09-productivity-features.md)**
+- **[Back to Productivity Features](../09-productivity-features.md)**
 - **[Thinking Mode](./09b-thinking-mode.md)** - Advanced reasoning
 - **[Knowledge Base](./09c-knowledge-base.md)** - Information storage

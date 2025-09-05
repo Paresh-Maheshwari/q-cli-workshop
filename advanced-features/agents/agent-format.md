@@ -85,6 +85,5 @@ Agent configuration files are JSON files that define specialized AI assistants w
 
 ## Next Steps
 
-- **[Back to Advanced Features](../09-productivity-features.md)**
+- **[Back to Productivity Features](../09-productivity-features.md)**
 - **[Agent File Locations](./agent-locations.md)**
-- **[Default Agent Behavior](./default-behavior.md)**

@@ -2,16 +2,15 @@
 
 Amazon Q CLI includes built-in productivity features to enhance your development workflow and task management.
 
-![Productivity Features Overview](../images/productivity-overview.svg)
-
 ## 📋 Available Features
 
 | Feature | Commands | Description | Details |
 |---------|----------|-------------|---------|
-| **Todo Lists** | `/todos` | Persistent task management and tracking | [Learn More →](./09a-todo-lists.md) |
-| **Thinking Mode** | `/experiment` | Complex reasoning with step-by-step processes | [Learn More →](./09b-thinking-mode.md) |
-| **Conversation Management** | `/save`, `/load` | Save and restore chat sessions | [Learn More →](./09c-conversation-management.md) |
-| **Context Management** | `/context` | Manage files and directories in conversation context | [Learn More →](./09d-context-management.md) |
+| **Todo Lists** | `/todos` | Persistent task management and tracking | [Learn More →](./productivity-features/09a-todo-lists.md) |
+| **Thinking Mode** | `/experiment` | Complex reasoning with step-by-step processes | [Learn More →](./productivity-features/09b-thinking-mode.md) |
+| **Conversation Management** | `/save`, `/load` | Save and restore chat sessions | [Learn More →](./productivity-features/09d-session-management.md) |
+| **Context Management** | `/context` | Manage files and directories in conversation context | [Learn More →](./productivity-features/09c-knowledge-base.md) |
+| **Agents** | `/agent` | Specialized AI assistants with custom configurations | [Learn More →](./agents/agent-format.md) |
 
 ## 🚀 Quick Start
 
@@ -46,25 +45,30 @@ q settings chat.enableTangentMode true
 
 ## 📚 Feature Details
 
-### [📋 Todo Lists](./09a-todo-lists.md)
+### [📋 Todo Lists](./productivity-features/09a-todo-lists.md)
 Persistent task management with automatic creation, interactive selection, and progress tracking. Perfect for complex multi-step projects.
 
 **Key Commands**: `/todos view`, `/todos resume`, `/todos clear-finished`
 
-### [🧠 Thinking Mode](./09b-thinking-mode.md)
+### [🧠 Thinking Mode](./productivity-features/09b-thinking-mode.md)
 Shows Q's step-by-step reasoning process for complex problems. Helps understand how conclusions are reached and improves learning.
 
 **Activation**: Enable via `/experiment` or `q settings chat.enableThinking true`
 
-### [💬 Conversation Management](./09c-conversation-management.md)
+### [💬 Conversation Management](./productivity-features/09d-session-management.md)
 Save and restore chat sessions to maintain continuity across work sessions. Includes conversation compaction for memory management.
 
 **Key Commands**: `/save`, `/load`, `/compact`
 
-### [📁 Context Management](./09d-context-management.md)
+### [📁 Context Management](./productivity-features/09c-knowledge-base.md)
 Add files and directories to conversation context for better project understanding and more relevant assistance.
 
 **Key Commands**: `/context`, `/hooks`, `/usage`
+
+### [🤖 Agents](./agents/agent-format.md)
+Create specialized AI assistants with custom configurations, tools, and behaviors for specific workflows.
+
+**Key Commands**: `/agent`, custom agent configurations
 
 ## ⚙️ Configuration
 
@@ -118,10 +122,11 @@ q chat
 ## 📚 Next Steps
 
 **Explore Each Feature**:
-- **[Todo Lists](./09a-todo-lists.md)** - Master task management
-- **[Thinking Mode](./09b-thinking-mode.md)** - Understand complex reasoning
-- **[Conversation Management](./09c-conversation-management.md)** - Maintain session continuity
-- **[Context Management](./09d-context-management.md)** - Optimize project assistance
+- **[Todo Lists](./productivity-features/09a-todo-lists.md)** - Master task management
+- **[Thinking Mode](./productivity-features/09b-thinking-mode.md)** - Understand complex reasoning
+- **[Conversation Management](./productivity-features/09d-session-management.md)** - Maintain session continuity
+- **[Context Management](./productivity-features/09c-knowledge-base.md)** - Optimize project assistance
+- **[Agents](./agents/agent-format.md)** - Create specialized AI assistants
 
 **Hands-on Projects**: Apply productivity features in real projects:
 - **[Website Project](../projects/10-project-website.md)** - Build a responsive website

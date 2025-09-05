@@ -115,6 +115,6 @@ q settings
 
 ## Next Steps
 
-- **[Back to Productivity Features](./09-productivity-features.md)**
+- **[Back to Productivity Features](../09-productivity-features.md)**
 - **[Todo Lists](./09a-todo-lists.md)** - Task management
 - **[Knowledge Base](./09c-knowledge-base.md)** - Information storage
